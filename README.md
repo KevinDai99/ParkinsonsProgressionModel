@@ -9,7 +9,7 @@ Our objective is to predict the progression of PD in patients by analyzing their
 
 Our team developed models using data on protein and peptide levels over time in both individuals with PD, as well as in normal age-matched healthy controls. By doing so, we aim to uncover significant insights into the molecular changes that occur as PD advances, potentially leading to a groundbreaking discovery.
 
-### Requirements 
+# Research Parameters
 
 Task Delegation
 
