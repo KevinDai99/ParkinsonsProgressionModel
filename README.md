@@ -9,35 +9,14 @@ Our objective is to predict the progression of PD in patients by analyzing their
 
 Our team developed models using data on protein and peptide levels over time in both individuals with PD, as well as in normal age-matched healthy controls. By doing so, we aim to uncover significant insights into the molecular changes that occur as PD advances, potentially leading to a groundbreaking discovery.
 
-# Research Parameters
+### Data Exploration 
 
-Task Delegation
 
-Building of Database (SQL) + Extraction into Python via sqlalchemy (Peter)
 
-Data Cleaning - CSV join them together, Get rid of Nulls (Kevin) 
+### Feature Engineering 
+![Screenshot 2023-04-18 at 7 36 22 PM](https://user-images.githubusercontent.com/89043234/232927624-66d36579-8409-4483-ba73-b280ccf35c04.png)
 
-Data Exploration (Matplot Library) (Alisha)
-Are there any patients that are outliers?
-Statistical significance of the mean of protein abundance overtime? 
 
-Feature Selection for Models (Kevin)
-Correlation Matrix (Which features are not correlated to disease progression?)
-Covariance Matrix (Which features are correlated with each other?)
-Variance Threshold (Which features don’t have any variance among each other)
-For Loop to test various features against standard neural archway (128, 128, 128)
-
-Models (Linear Regression, Ensemble Learning, Neural Network) (Kevin and Sambulo)
-
-Hyper-optimization of Models (Keras Tuner, CLF) - 1 hr 
-
-Results - Data Visualization
-What is the Mean Square Error?
-Do any models outperform the other?
-Are there any outliers regarding the MSE?
-Summarization of results via Tableau (Alisha)
-
-GitHub Documentation (Readme)
 
 
 ## Presentation slidedeck
