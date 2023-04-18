@@ -51,7 +51,7 @@ Covariance Matrix (Which features are correlated with each other?)
 Variance Threshold (Which features don’t have any variance among each other)
 For Loop to test various features against standard neural archway (128, 128, 128)
 
-Models (Linear Regression, Ensemble Learning, Neural Network)
+Models (Linear Regression, Ensemble Learning, Neural Network) (Kevin and Sambulo)
 
 Hyper-optimization of Models (Keras Tuner, CLF) - 1 hr 
 
@@ -63,8 +63,9 @@ Summarization of results via Tableau (Alisha)
 
 GitHub Documentation (Readme)
 
-Slides for Presentation 
 
+## Presentation slidedeck
+https://docs.google.com/presentation/d/17_QldZsJaKhPdFU2Ns4lo1IzDus1Eby7Aq4LPr5zHiM/edit#slide=id.g22f87a8b3ca_5_603
 
 
 
