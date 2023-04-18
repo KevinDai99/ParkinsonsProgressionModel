@@ -9,14 +9,56 @@ Our objective is to predict the progression of PD in patients by analyzing their
 
 Our team developed models using data on protein and peptide levels over time in both individuals with PD, as well as in normal age-matched healthy controls. By doing so, we aim to uncover significant insights into the molecular changes that occur as PD advances, potentially leading to a groundbreaking discovery.
 
-### Data Exploration 
+# Research Parameters
+Are there any patients that are outliers?
+Statistical significance of the mean of protein abundance overtime? 
+Correlation Matrix (Which features are not correlated to disease progression?)
+Covariance Matrix (Which features are correlated with each other?)
+Variance Threshold (Which features don’t have any variance among each other)
+What is the Mean Square Error?
+Do any models outperform the other?
+Are there any outliers regarding the MSE?
+
+
+# Description of the Data
+1. Data Preparation: Combine the provided datasets (train_clinical_data.csv, train_peptides.csv, train_proteins.csv) into a single dataset using patient ID as the common key. Clean and preprocess the data to remove missing values, outliers, and other inconsistencies.
+  . The `train_clinical_data.csv` file contains information on each patient's visit, including the visit ID, patient ID, visit month, and UPDRS scores for     different assessments.
+
+  . The `train_peptides.csv` file contains information on the peptides measured in each patient's CSF sample. We will need to preprocess this data to           extract the relevant features for our neural network model.
+
+  . The `train_proteins.csv` file contains information on the proteins measured in each patient's CSF sample. This is the main data file that we will use       to train our neural network model.
 
 
 
-### Feature Engineering 
-![Screenshot 2023-04-18 at 7 36 22 PM](https://user-images.githubusercontent.com/89043234/232927624-66d36579-8409-4483-ba73-b280ccf35c04.png)
+# Feature Selection
+3.	Feature Selection: Identify the relevant features that are most informative for predicting PD progression.
 
 
+Building of Database (SQL) + Extraction into Python via sqlalchemy (Peter)
+
+Data Cleaning - CSV join them together, Get rid of Nulls (Kevin) 
+
+Data Exploration (Matplot Library) (Alisha)
+Are there any patients that are outliers?
+Statistical significance of the mean of protein abundance overtime? 
+
+Feature Selection for Models (Kevin)
+Correlation Matrix (Which features are not correlated to disease progression?)
+Covariance Matrix (Which features are correlated with each other?)
+Variance Threshold (Which features don’t have any variance among each other)
+For Loop to test various features against standard neural archway (128, 128, 128)
+
+Models (Linear Regression, Ensemble Learning, Neural Network) (Kevin and Sambulo)
+
+Hyper-optimization of Models (Keras Tuner, CLF) - 1 hr 
+
+Results - Data Visualization
+What is the Mean Square Error?
+Do any models outperform the other?
+Are there any outliers regarding the MSE?
+Summarization of results via Tableau (Alisha)
+
+GitHub Documentation (Readme)
 
 
 ## Presentation slidedeck
