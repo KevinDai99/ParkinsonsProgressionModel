@@ -20,8 +20,8 @@ Our team developed models using data on protein and peptide levels over time in 
 8. Are there any outliers regarding the MSE?
 
 
-# Description of the Data
-1. Data Preparation: Combine the provided datasets (train_clinical_data.csv, train_peptides.csv, train_proteins.csv) into a single dataset using patient ID as the common key. Clean and preprocess the data to remove missing values, outliers, and other inconsistencies.
+## Description of the Data
+1. Data Preparation: Combine the datasets (train_clinical_data.csv, train_peptides.csv, train_proteins.csv) into a single dataset using patient ID as the common key. Clean and preprocess the data to remove missing values, outliers, and other inconsistencies.
   . The `train_clinical_data.csv` file contains information on each patient's visit, including the visit ID, patient ID, visit month, and UPDRS scores for     different assessments.
 
   . The `train_peptides.csv` file contains information on the peptides measured in each patient's CSF sample. We will need to preprocess this data to           extract the relevant features for our neural network model.
@@ -30,8 +30,18 @@ Our team developed models using data on protein and peptide levels over time in 
 
 
 
-# Feature Selection
-3.	Feature Selection: Identify the relevant features that are most informative for predicting PD progression.
+## Feature Selection
+Feature Selection: Identify the relevant features that are most informative for predicting PD progression.
+
+
+## Model Selection
+Chooseing an appropriate machine learning algorithm that is suitable for predicting the PD progression based on the selected features. Algorithms employed for this task include decision trees, random forests, and neural networks
+
+## Model Training and Evaluation
+Splitting the data into training and testing sets, and train the selected model on the training set. Evaluation of the model performance on the testing set using metrics such as mean squared error, R-squared, and accuracy.
+
+## Model Optimization
+Fine-tuning the model parameters and hyperparameters to improve performance on the testing set. This was done using techniques such as cross-validation, grid search, and random search.
 
 
 Building of Database (SQL) + Extraction into Python via sqlalchemy (Peter)
