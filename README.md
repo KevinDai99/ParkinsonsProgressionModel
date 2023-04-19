@@ -41,6 +41,8 @@ The top model was subjected to L2 regluarization for simplification. Lambda valu
 
 ![image](https://user-images.githubusercontent.com/89043234/232931572-0ddb7fd8-bf13-4542-af9f-88bd728e67f7.png)
 
+![image](https://user-images.githubusercontent.com/89043234/232935077-f9a46b79-8ad0-4d53-a736-62156294d3fd.png)
+
 The final model had a r2 square value of 0.65 and predicts patients with lower severity score than higher. This was expected as the dataset contains a lower frequency of patients with higher scores. This is a point for future investigation. 
 
 ## Presentation slidedeck
