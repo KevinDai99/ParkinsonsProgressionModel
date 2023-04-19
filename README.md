@@ -32,6 +32,13 @@ Combined the datasets (train_clinical_data.csv, train_peptides.csv, train_protei
 
 Correlation & co-variance matrix was used to select features. Cross-validation was conducted to evaluate the models. The top model has an avg of 82, although the high STD suggest that the model is overfitted and complex. 
 
+Hyperoptimization was conducted on the top model, and the results futher confirm overfitting.
+
+| Train_MSE | Test_MSE |
+|-----------|----------|
+| 0.47      | 32.54   | 
+
+
 ## L2 Regularization
 
 ![image](https://user-images.githubusercontent.com/89043234/232931273-0ca49861-922d-40bd-8d6c-a20b61e46c92.png)
