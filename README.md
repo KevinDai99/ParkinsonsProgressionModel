@@ -9,16 +9,6 @@ Our objective is to predict the progression of PD in patients by analyzing their
 
 Our team developed models using data on protein and peptide levels over time in both individuals with PD, as well as in normal age-matched healthy controls. By doing so, we aim to uncover significant insights into the molecular changes that occur as PD advances, potentially leading to a groundbreaking discovery.
 
-## Research Parameters
-1. Are there any patients that are outliers?
-2. Statistical significance of the mean of protein abundance overtime? 
-3. Correlation Matrix (Which features are not correlated to disease progression?)
-4. Covariance Matrix (Which features are correlated with each other?)
-5. Variance Threshold (Which features don’t have any variance among each other)
-6. What is the Mean Square Error?
-7. Do any models outperform the other?
-8. Are there any outliers regarding the MSE?
-
 ## Description of the Data
 
 1. Data Preparation: Combine the datasets (train_clinical_data.csv, train_peptides.csv, train_proteins.csv) into a single dataset using patient ID as the common key. Clean and preprocess the data to remove missing values, outliers, and other inconsistencies.
@@ -52,33 +42,6 @@ The top model was subjected to L2 regluarization for simplification. Lambda valu
 ![image](https://user-images.githubusercontent.com/89043234/232931572-0ddb7fd8-bf13-4542-af9f-88bd728e67f7.png)
 
 The final model had a r2 square value of 0.65 and predicts patients with lower severity score than higher. This was expected as the dataset contains a lower frequency of patients with higher scores. This is a point for future investigation. 
-
-Building of Database (SQL) + Extraction into Python via sqlalchemy (Peter)
-
-Data Cleaning - CSV join them together, Get rid of Nulls (Kevin) 
-
-Data Exploration (Matplot Library) (Alisha)
-Are there any patients that are outliers?
-Statistical significance of the mean of protein abundance overtime? 
-
-Feature Selection for Models (Kevin)
-Correlation Matrix (Which features are not correlated to disease progression?)
-Covariance Matrix (Which features are correlated with each other?)
-Variance Threshold (Which features don’t have any variance among each other)
-For Loop to test various features against standard neural archway (128, 128, 128)
-
-Models (Linear Regression, Ensemble Learning, Neural Network) (Kevin and Sambulo)
-
-Hyper-optimization of Models (Keras Tuner, CLF) - 1 hr 
-
-Results - Data Visualization
-What is the Mean Square Error?
-Do any models outperform the other?
-Are there any outliers regarding the MSE?
-Summarization of results via Tableau (Alisha)
-
-GitHub Documentation (Readme)
-
 
 ## Presentation slidedeck
 https://docs.google.com/presentation/d/17_QldZsJaKhPdFU2Ns4lo1IzDus1Eby7Aq4LPr5zHiM/edit#slide=id.g22f87a8b3ca_5_603
