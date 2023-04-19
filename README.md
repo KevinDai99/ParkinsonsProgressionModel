@@ -19,8 +19,8 @@ Our team developed models using data on protein and peptide levels over time in 
 7. Do any models outperform the other?
 8. Are there any outliers regarding the MSE?
 
-
 ## Description of the Data
+
 1. Data Preparation: Combine the datasets (train_clinical_data.csv, train_peptides.csv, train_proteins.csv) into a single dataset using patient ID as the common key. Clean and preprocess the data to remove missing values, outliers, and other inconsistencies.
   . The `train_clinical_data.csv` file contains information on each patient's visit, including the visit ID, patient ID, visit month, and UPDRS scores for     different assessments.
 
@@ -28,21 +28,30 @@ Our team developed models using data on protein and peptide levels over time in 
 
   . The `train_proteins.csv` file contains information on the proteins measured in each patient's CSF sample. This is the main data file that we will use       to train our neural network model.
 
-
-
 ## Feature Selection
-Feature Selection: Identify the relevant features that are most informative for predicting PD progression.
 
+| Average MSE | STD | # of Features |
+|-------------|-----|---------------|
+| 82          | 9   | 1080          |
+| 90          | 6   | 1240          |
+| 92          | 6   | 1181          |
+| 92          | 7   | 1102          |
+| 94          | 10  | 382           |
+| 101         | 21  | 754           |
 
-## Model Selection
-Chooseing an appropriate machine learning algorithm that is suitable for predicting the PD progression based on the selected features. Algorithms employed for this task include decision trees, random forests, and neural networks
+Correlation & co-variance matrix was used to select features. Cross-validation was conducted to evaluate the models. The top model has an avg of 82, although the high STD suggest that the model is overfitted and complex. 
+
+## L2 Regularization
+
+![image](https://user-images.githubusercontent.com/89043234/232931273-0ca49861-922d-40bd-8d6c-a20b61e46c92.png)
+
+The top model was subjected to L2 regluarization for simplification. Lambda values between 0 - 1 were tested to determine strength. An lambda value of 1 was chosen due to tha low MSE, and standard deviation. 
 
 ## Model Training and Evaluation
-Splitting the data into training and testing sets, and train the selected model on the training set. Evaluation of the model performance on the testing set using metrics such as mean squared error, R-squared, and accuracy.
 
-## Model Optimization
-Fine-tuning the model parameters and hyperparameters to improve performance on the testing set. This was done using techniques such as cross-validation, grid search, and random search.
+![image](https://user-images.githubusercontent.com/89043234/232931572-0ddb7fd8-bf13-4542-af9f-88bd728e67f7.png)
 
+The final model had a r2 square value of 0.65 and predicts patients with lower severity score than higher. This was expected as the dataset contains a lower frequency of patients with higher scores. This is a point for future investigation. 
 
 Building of Database (SQL) + Extraction into Python via sqlalchemy (Peter)
 
