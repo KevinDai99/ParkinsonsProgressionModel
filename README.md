@@ -12,11 +12,11 @@ Our team developed models using data on protein and peptide levels over time in 
 ## Description of the Data
 
 1. Data Preparation: Combine the datasets (train_clinical_data.csv, train_peptides.csv, train_proteins.csv) into a single dataset using patient ID as the common key. Clean and preprocess the data to remove missing values, outliers, and other inconsistencies.
-  . The `train_clinical_data.csv` file contains information on each patient's visit, including the visit ID, patient ID, visit month, and UPDRS scores for     different assessments.
+  a. The `train_clinical_data.csv` file contains information on each patient's visit, including the visit ID, patient ID, visit month, and UPDRS scores for     different assessments.
 
-  . The `train_peptides.csv` file contains information on the peptides measured in each patient's CSF sample. We will need to preprocess this data to           extract the relevant features for our neural network model.
+  b. The `train_peptides.csv` file contains information on the peptides measured in each patient's CSF sample. We will need to preprocess this data to           extract the relevant features for our neural network model.
 
-  . The `train_proteins.csv` file contains information on the proteins measured in each patient's CSF sample. This is the main data file that we will use       to train our neural network model.
+  c. The `train_proteins.csv` file contains information on the proteins measured in each patient's CSF sample. This is the main data file that we will use       to train our neural network model.
 
 ## Feature Selection
 
